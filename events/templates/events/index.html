@@ -1,0 +1,52 @@
+{% extends "events/base.html" %}
+{% block content %}
+
+<div id="background">
+    	
+	<div class= "button_div" id="answer_div">
+
+		<div class="parallax-container">
+			<div class="parallax"><img src="static/parallax-back.jpg"></div>
+		</div>
+
+		<div class="section white">
+			<div class="row container">
+				<h2> Welcome to Event Planner!</h2>
+	        	<h4>Register or Login above to get started</h4>
+				<br><br>	
+			</div>
+		</div>
+
+		<div class="parallax-container">
+			<div class="parallax"><img src="static/parallax-back.jpg"></div>
+		</div>
+
+<!-- 		<div class="section white">
+			<div class="row container">
+				<h2> Welcome to Event Planner!</h2>
+	        	<h4>Register or Login above to get started</h4>
+			</div>
+		</div>
+
+		<div class="parallax-container">
+			<div class="parallax"><img src="static/geometric.png"></div>
+		</div>
+ -->
+ 
+    <!-- this is where everything from mustache will render -->
+    </div>
+    <br><br>
+
+</div>
+
+{% include "events/register.html"%}
+{% include "events/login.html"%}
+{% include "events/create.html"%}
+{% include "events/edit.html"%}
+{% include "events/view_all.html"%}
+{% include "events/all_events.html"%}
+{% include "events/loggedin_index.html"%}
+
+{% endblock content %}
+
+

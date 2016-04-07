@@ -1,0 +1,33 @@
+.button_div {
+	margin-left: 1em;
+}
+
+.brand-logo {
+	padding-left: 1em !important; 
+}
+
+.button_div {
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+.parallax-container {
+	height: 60vh;
+	margin-left: -3em;
+	margin-right: -3em;
+}
+
+#parallax-back {
+	background-image: url("parallax-back.jpg");
+}
+
+#pic {
+	background-image: url("parallax-back.jpg");
+	margin-left: -3em;
+	margin-right: -3em;
+	height: auto;
+}
+
+h4 {
+	margin-left: 1em;
+}

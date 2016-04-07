@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Planner</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js
+"></script>
+
+	<script src="{% static 'django_ajax.js'%}"></script>
+	<script src="{% static 'main.js'%}"></script>
+
+</head>
+
+<body>
+
+<div id="nav">
+    <nav>
+    <!-- Mobile Structure -->
+    <ul class="side-nav" id="mobile-demo">
+        <li><a href="users/register" class="register"> Register!</a></li>
+        <li><a href="users/login" class="login"> Login</a></li>
+    </ul>
+
+
+    <div class="nav-wrapper">
+        <a href="/" class="brand-logo"> Event Planner</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="users/register" class="register"> Register!</a></li>
+        <li><a href="users/login" class="login"> Login</a></li>
+        </ul>   
+        </div>
+    </nav>
+</div>
+
+{% include "events/loggedin_nav.html"%}
+{% include "events/login_nav.html"%}
+
+        {% block content %}
+        <!-- all content from other HTML pages go here -->
+        {% endblock content %}
+
+</body>
+</html>
